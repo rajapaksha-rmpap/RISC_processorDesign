@@ -61,13 +61,6 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	addALU
 
-} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v}
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RISC_RV32I_cpu
-
-Top level modules:
-	RISC_RV32I_cpu
-
 } {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/branch_alu.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/branch_alu.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module BranchALU
@@ -82,18 +75,18 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	ALU_tb
 
-} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v}
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module test
-
-Top level modules:
-	test
-
 } {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module pc_tb
 
 Top level modules:
 	pc_tb
+
+} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module test
+
+Top level modules:
+	test
 
 } {} {}}

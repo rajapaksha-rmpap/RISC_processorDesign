@@ -11,16 +11,16 @@ RISC RV32I (version 2.0) CPU
    Then, the instruction will be decoded and completely executed within a finite latency. 
 ********************************************************************************************/ 
 
-module RISC_RV32I_cpu(instr, data, instrAddr, MemAddr, MemWrite, MemRead, addMemControl, clk); 
+module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead, addMemControl, clk); 
   localparam bus_size = 32;      // instruction and data bus width 
   localparam addr_bus_size = 32; // memory address bus width 
   
   input[bus_size-1:0] instr; 
   input clk; 
-  inout[bus_size-1:0] data;      // data for Read/Write in data memory 
+  inout[bus_size-1:0] toMem, fromMem; // data for Read/Write in data memory 
   output[addr_bus_size-1:0] instrAddr, MemAddr; 
-  output MemWrite, MemRead; 
-  output[1:0] addMemControl;     // define 'u' later ################# 
+  output EnWrite, EnRead; 
+  output[1:0] addMemControl; 
   
   wire[6:0] opcode; 
   wire[9:0] controls; 
@@ -39,8 +39,11 @@ module RISC_RV32I_cpu(instr, data, instrAddr, MemAddr, MemWrite, MemRead, addMem
   reg [bus_size-1:0] BranchPC;  // address of next instruction if a branching has to occur 
   wire[bus_size-1:0] PCplus4;   // address of the adjacent instruction of current pc (pc+4) 
   reg [bus_size-1:0] PCin;      // input to pc (address of next instruction) 
-  wire[bus_size-1:0] PCout;     // current pc value (updated at each posedge of clk)
+  wire[bus_size-1:0] PCout;     // current pc value (updated at each posedge of clk) 
   
+  // data paths used for load and store instructions 
+  wire[bus_size-1:0] dataIn;    // data read from data memory 
+  wire[bus_size-1:0] toReg;     // data to be written in regfile 
   
   // /////////////////////////////////// CONTROL SIGNALS ///////////////////////////////////////// 
   // instruction based control signals  
@@ -58,14 +61,23 @@ module RISC_RV32I_cpu(instr, data, instrAddr, MemAddr, MemWrite, MemRead, addMem
   // branch control signals 
   wire branch, lt; 
   
+  // load and store control signals 
+  
   // /////////////////////////////// CONTINUOUS ASSIGNMENTS ////////////////////////////////////// 
   
-  // ***************** Data Paths ******************** 
-  assign instrAddr = PCout;       // *output of CPU module 
+  // ports of CPU module 
+  assign instrAddr = PCout;     // instruction address 
+  assign MemAddr   = dataOut;   // address for data memory 
+  assign toMem     = data2;     // data to be written in data memory 
+  assign fromMem   = dataIn;    // data read from data memory 
+  assign EnWrite   = MemWrite;  // write data 
+  assign EnRead    = MemRead;   // read data 
+  
+  // Data Paths 
   assign uncondBranchPC = ALUout; 
   
   // for initial testing 
-  assign rs1   = 32'h00_00_00_FF; 
+  assign rs1   = 32'h00_00_00_01; 
   assign rs2   = 32'h00_00_00_02;
   assign imm   = 32'h00_00_01_00;
   
@@ -123,6 +135,12 @@ module RISC_RV32I_cpu(instr, data, instrAddr, MemAddr, MemWrite, MemRead, addMem
     // MUX5 (for branching) 
     if (branch) PCin = BranchPC; 
     else PCin = PCplus4; 
+  end 
+  
+  always @(dataOut, dataIn, MemRead) begin 
+    // MUX6 (to specify what to be written in regfile) 
+    if (MemRead) toReg = dataIn; 
+    else toReg = dataOut; 
   end 
   
 endmodule // RISC_RV32I_cpu 
