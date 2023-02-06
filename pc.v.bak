@@ -13,6 +13,8 @@ module pc(PCin, clk, PCout);
   input clk; 
   output reg[addr_bus_size-1:0] PCout; 
   
+  initial PCout = 32'b0; // initialize with 0 in pc 
+  
   always @(posedge clk) PCout = PCin; 
   
 endmodule // pc 

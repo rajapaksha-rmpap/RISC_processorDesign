@@ -15,6 +15,6 @@ module pc(PCin, clk, PCout);
   
   initial PCout = 32'b0; // initialize with 0 in pc 
   
-  always @(posedge clk) PCout = PCin; 
+  always @(posedge clk) PCout <= PCin; 
   
 endmodule // pc 

@@ -27,7 +27,7 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead
   
   // ///////////////////////////////////// DATA PATHs //////////////////////////////////////////// 
   // data paths used with ALU 
-  wire[bus_size-1:0] rs1, rs2;  // two register outputs of regfile 
+  wire[bus_size-1:0] fromReg1, fromReg2; // two register outputs from regfile 
   wire[bus_size-1:0] imm;       // immediate operand 
   reg [bus_size-1:0] data1, data2; // input data buses to ALU 
   wire[bus_size-1:0] ALUout;    // output of ALU 
@@ -46,7 +46,8 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead
   reg [bus_size-1:0] toReg;     // data to be written in regfile 
   
   // /////////////////////////////////// CONTROL SIGNALS ///////////////////////////////////////// 
-  // instruction based control signals  
+  // instruction based control signals 
+  wire[4:0] rs1, rs2, rd;       // register addresses for regfile 
   wire[2:0] funct3;             // used to specify ALUoperation, branch condition, and Mem Load/store type 
   wire funct7;                  // used to specify SUB and SRA operations 
   
@@ -76,13 +77,11 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead
   // Data Paths 
   assign uncondBranchPC = ALUout; 
   
-  // for initial testing 
-  assign rs1   = 32'h00_00_00_01; 
-  assign rs2   = 32'h00_00_00_02;
-  assign imm   = 32'h00_00_01_00;
-  
   assign opcode = instr[6:0]; 
+  assign rd = instr[11:7]; 
   assign funct3 = instr[14:12]; 
+  assign rs1 = instr[19:15]; 
+  assign rs2 = instr[24:20]; 
   assign funct7 = instr[30]; 
   
   assign BranchEn   = controls[0]; 
@@ -106,16 +105,18 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead
   addALU CBALU(.PCout(PCout), .offset(imm), .increPC(condBranchPC)); 
   branch B(BranchEn, IsUncond, funct3, z, lt, branch); 
   pc PC(PCin, clk, PCout); 
+  regfile RegF(fromReg1, fromReg2, toReg, rs2, rs1, rd, RegWrite, clk); 
+  immGen IG(instr, imm); 
   
   always @(rs1, PCout, ALUsrc1) begin 
     // MUX1 (for ALUoperand1) 
-    if (!ALUsrc1) data1 = rs1; 
+    if (!ALUsrc1) data1 = fromReg1; 
     else data1 = PCout; 
   end 
   
   always @(rs2, imm, ALUsrc2) begin 
     // MUX2 (for ALUoperand2)
-    if (!ALUsrc2) data2 = rs2; 
+    if (!ALUsrc2) data2 = fromReg2; 
     else data2 = imm; 
   end 
   
