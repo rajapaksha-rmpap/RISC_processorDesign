@@ -11,15 +11,17 @@ RISC RV32I (version 2.0) CPU
    Then, the instruction will be decoded and completely executed within a finite latency. 
 ********************************************************************************************/ 
 
-module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead, addMemControl, clk); 
+module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, WriteEn, ReadEn, addMemControl, clk); 
   localparam bus_size = 32;      // instruction and data bus width 
   localparam addr_bus_size = 32; // memory address bus width 
+  supply0 singleBitZero; 
   
   input[bus_size-1:0] instr; 
+  input[bus_size-1:0] fromMem; 
   input clk; 
-  inout[bus_size-1:0] toMem, fromMem; // data for Read/Write in data memory 
+  output[bus_size-1:0] toMem; 
   output[addr_bus_size-1:0] instrAddr, MemAddr; 
-  output EnWrite, EnRead; 
+  output WriteEn, ReadEn; 
   output[1:0] addMemControl; 
   
   wire[6:0] opcode; 
@@ -69,16 +71,14 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead
   // ports of CPU module 
   assign instrAddr = PCout;     // instruction address 
   assign MemAddr   = dataOut;   // address for data memory 
-  assign toMem     = data2;     // data to be written in data memory 
+  assign toMem     = rs2;       // data to be written in data memory 
   assign fromMem   = dataIn;    // data read from data memory 
-  assign EnWrite   = MemWrite;  // write data 
-  assign EnRead    = MemRead;   // read data 
+  assign WriteEn   = MemWrite;  // write data 
+  assign ReadEn    = MemRead;   // read data 
+  assign addMemControl = instr[13:12]; // specify to load/store word/half-word/byte 
   
   // Data Paths 
-  assign uncondBranchPC = ALUout; 
-  
-  // for initial testing 
-  assign imm   = 32'h00_00_01_00;
+  assign uncondBranchPC = {ALUout[bus_size-1:1], singleBitZero}; 
   
   assign opcode = instr[6:0]; 
   assign rd = instr[11:7]; 
@@ -102,7 +102,7 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, EnWrite, EnRead
   
   // //////////////////////////////// MODULE INSTANTIATION ////////////////////////////////////// 
   control C(opcode, controls); 
-  ALUopration ACSGU(ALUcontrol, IRtype, BranchEn, funct7, funct3, ALUopr, SUBorSRA); 
+  ALUopration ACSGU(ALUcontrol, IRtype, BranchEn, IsUncond, funct7, funct3, ALUopr, SUBorSRA); 
   ALU mainALU(data1, data2, ALUopr, SUBorSRA, ALUout, z); 
   addALU GALU(.PCout(PCout), .offset(32'b0100), .increPC(PCplus4)); 
   addALU CBALU(.PCout(PCout), .offset(imm), .increPC(condBranchPC)); 

@@ -5,6 +5,7 @@ entity ALUopration is
         ALUcontrol      : in     vl_logic;
         IRtype          : in     vl_logic;
         BranchEn        : in     vl_logic;
+        IsUncond        : in     vl_logic;
         funct7          : in     vl_logic;
         funct3          : in     vl_logic_vector(2 downto 0);
         ALUopr          : out    vl_logic_vector(2 downto 0);

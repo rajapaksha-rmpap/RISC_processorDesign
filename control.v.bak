@@ -78,7 +78,7 @@ module control(opcode, controls);
       end 
       
       // ****** Branching and Jumping Instructions ****** 
-      (3'b010): begin 
+      (3'b110): begin 
         controls[0] = 1; // do branching 
         controls[1] = 0; // no MemRead *(same as MemtoReg)
         controls[2] = 0; // no MemWrite 

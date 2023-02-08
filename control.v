@@ -105,7 +105,7 @@ module control(opcode, controls);
           (2'b11): begin // ***** JAL ***** 
             controls[3] = 0; // ALUcontrol = default (ADD, SUBorSRA = 0) 
             controls[4] = 1; // ALUsrc1 = pc 
-            controls[5] = 0; // ALUsrc2 = immediate operand 
+            controls[5] = 1; // ALUsrc2 = immediate operand 
             controls[6] = 1; // result = (pc + 4) 
             controls[7] = 1; // do RegWrite 
             

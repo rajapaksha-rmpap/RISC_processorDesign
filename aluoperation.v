@@ -7,9 +7,9 @@ ALU Operation Signal Generator Unit
    R, I, and B type instructions. 
 ****************************************************************************/ 
 
-module ALUopration(ALUcontrol, IRtype, BranchEn, funct7, funct3, ALUopr, SUBorSRA); 
+module ALUopration(ALUcontrol, IRtype, BranchEn, IsUncond, funct7, funct3, ALUopr, SUBorSRA); 
   input [2:0] funct3; 
-  input ALUcontrol, IRtype, BranchEn, funct7; 
+  input ALUcontrol, IRtype, BranchEn, IsUncond, funct7; 
   output reg[2:0] ALUopr; 
   output reg SUBorSRA; 
   
@@ -32,7 +32,7 @@ module ALUopration(ALUcontrol, IRtype, BranchEn, funct7, funct3, ALUopr, SUBorSR
     end 
     
     // ***** B type instructions *****   
-    else if (BranchEn) begin 
+    else if (BranchEn && !IsUncond) begin 
       case (funct3[2:1]) 
         (2'b00): begin ALUopr = 3'b000; SUBorSRA = 1; end // BEQ and BNE 
         (2'b10): ALUopr = 3'b010; // BLT and BGE 

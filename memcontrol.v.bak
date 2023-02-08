@@ -1,0 +1,14 @@
+/*******************************************************************************
+Additional Memory Control Generator Unit 
+-> generate 'addMemControl' control signals which is used to determine the width 
+   of the data to load/store in the data memory using funct3. 
+*******************************************************************************/
+
+module memControl(MemRead, MemWrite, funct3, addMemControl); 
+  input[2:0] funct3; 
+  input MemRead, MemWrite; 
+  output[1:0] addMemControl; 
+  
+  always @* begin 
+    
+  
