@@ -72,7 +72,7 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, WriteEn, ReadEn
   assign instrAddr = PCout;     // instruction address 
   assign MemAddr   = dataOut;   // address for data memory 
   assign toMem     = rs2;       // data to be written in data memory 
-  assign fromMem   = dataIn;    // data read from data memory 
+  assign dataIn    = fromMem;   // data read from data memory 
   assign WriteEn   = MemWrite;  // write data 
   assign ReadEn    = MemRead;   // read data 
   assign addMemControl = instr[13:12]; // specify to load/store word/half-word/byte 

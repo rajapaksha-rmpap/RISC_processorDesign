@@ -11,12 +11,12 @@ module loadDataExt(fromMem, funct3, dataIn);
   
   always @* begin 
     case (funct3) 
-      (3'b000): dataIn = {24{fromMem[7], fromMem[7:0]}};    // load byte (sign extended)
-      (3'b001): dataIn = {16{fromMem[15], fromMem[15:0]}};  // load half-word (sign extended)
+      (3'b000): dataIn = {{24{fromMem[7]}} , fromMem[7:0]};    // load byte (sign extended)
+      (3'b001): dataIn = {{16{fromMem[15]}}, fromMem[15:0]};  // load half-word (sign extended)
       (3'b100): dataIn = {24'b0, fromMem[7:0]};             // load byte (zero extended)
       (3'b101): dataIn = {16'b0, fromMem[15:0]};            // load half-word (zero extended) 
       default:  dataIn = fromMem; 
     endcase 
   end 
   
-endmodule; // loadDataExt 
+endmodule // loadDataExt 

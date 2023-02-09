@@ -24,21 +24,21 @@ Z13 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Desi
 !s85 0
 !s101 -O0
 vALU
-Z14 !s100 2b8kb>QJDRf<KNS82[[iD1
-Z15 I`N[2lS<ZSm=AVHmbX`3;h3
-Z16 VUXhnG1GlOP7U5oZ@LVQl52
+Z14 I4@9?WGe8g;[CDH`]JJNOU3
+Z15 VUXhnG1GlOP7U5oZ@LVQl52
 R4
-Z17 w1675567236
-Z18 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v
-Z19 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v
+Z16 w1675958624
+Z17 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v
+Z18 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v
 L0 9
 R8
 r1
 31
-Z20 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v|
+Z19 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v|
 R10
-Z21 n@a@l@u
-Z22 !s108 1675864046.851000
+Z20 n@a@l@u
+Z21 !s100 kXCRe];?z_YMe0h8I9LHC2
+Z22 !s108 1675958634.585000
 Z23 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v|
 !i10b 1
 !s85 0
@@ -142,21 +142,21 @@ Z71 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits a
 !s85 0
 !s101 -O0
 vcontrol
-Z72 !s100 2lK46lZoL=3S?L]hWKj_=2
-Z73 IBW5[fRKYf4A`L`8i9:=BH1
-Z74 VJ<@O@PzWC8OJ5mGml^lQK2
+Z72 ICONz:kmFi=QTT468:1_GK2
+Z73 VJ<@O@PzWC8OJ5mGml^lQK2
 R4
-Z75 w1675834251
-Z76 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/control.v
-Z77 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/control.v
+Z74 w1675959570
+Z75 8D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\control.v
+Z76 FD:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\control.v
 L0 8
 R8
 r1
 31
-Z78 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/control.v|
+Z77 !s90 -reportprogress|300|-work|work|D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\control.v|
 R10
-Z79 !s108 1675864047.842000
-Z80 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/control.v|
+Z78 !s100 KnGzR[j730LG5NXgizNaK2
+Z79 !s108 1675959577.347000
+Z80 !s107 D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\control.v|
 !i10b 1
 !s85 0
 !s101 -O0
@@ -181,158 +181,178 @@ Z90 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Desi
 !s85 0
 !s101 -O0
 vloadDataExt
-!i10b 1
-Z91 !s100 8mUkeY@=8FYR_RiN`oR6R2
-Z92 I[^2IT4Vb7>KkgP=Nc6i8B1
-Z93 V;[7g8fHE5C:;nLT9BD@Az0
+Z91 I?^0==dA];P53F^MhM?aBG3
+Z92 V;[7g8fHE5C:;nLT9BD@Az0
 R4
-w1675877502
+Z93 w1675881794
 Z94 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt.v
 Z95 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt.v
 L0 6
 R8
 r1
-!s85 0
 31
-!s108 1675877507.105000
-!s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt.v|
 Z96 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt.v|
-!s101 -O0
 R10
 Z97 nload@data@ext
-vpc
-Z98 !s100 P0b`^b]K4On<@eXAEF`5N3
-Z99 Ifk88UL^L^7645cI?B]1^52
-Z100 VDHZ97c55O80^<6iUjE=PL3
-R4
-Z101 w1675697031
-Z102 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v
-Z103 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v
-L0 9
-R8
-r1
-31
-Z104 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v|
-R10
-Z105 !s108 1675864048.600000
-Z106 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v|
+Z98 !s100 QRfNf:28:c8UY;;_ZGEJ13
+Z99 !s108 1675881800.209000
+Z100 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt.v|
 !i10b 1
 !s85 0
 !s101 -O0
-vpc_tb
-Z107 !s100 <mGfU>1WE@zee3fJQcIAj0
-Z108 INb]U7D8nO`?6ET?Q`?Wc63
-Z109 V`a]4kE:Z=9;R7XL7`jzL?0
+vloadDataExt_tb
+Z101 Ij7?Xcm8F5dlX>ni;^MOVh2
+Z102 V37zQ=4c85353CY@1Vig`>3
 R4
-Z110 w1675448013
-Z111 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v
-Z112 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v
+Z103 w1675882063
+Z104 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt_tb.v
+Z105 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt_tb.v
 L0 3
 R8
 r1
 31
-Z113 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v|
+Z106 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt_tb.v|
 R10
-Z114 !s108 1675864048.800000
-Z115 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v|
+Z107 nload@data@ext_tb
+Z108 !s100 JzSK1X=]RklihBedGOXZd0
+Z109 !s108 1675882068.857000
+Z110 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpc
+Z111 !s100 P0b`^b]K4On<@eXAEF`5N3
+Z112 Ifk88UL^L^7645cI?B]1^52
+Z113 VDHZ97c55O80^<6iUjE=PL3
+R4
+Z114 w1675697031
+Z115 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v
+Z116 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v
+L0 9
+R8
+r1
+31
+Z117 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v|
+R10
+Z118 !s108 1675864048.600000
+Z119 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpc_tb
+Z120 !s100 <mGfU>1WE@zee3fJQcIAj0
+Z121 INb]U7D8nO`?6ET?Q`?Wc63
+Z122 V`a]4kE:Z=9;R7XL7`jzL?0
+R4
+Z123 w1675448013
+Z124 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v
+Z125 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v
+L0 3
+R8
+r1
+31
+Z126 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v|
+R10
+Z127 !s108 1675864048.800000
+Z128 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_tb.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vpcALU
-Z116 IM>hSYKBdGCno6f`8S<^4l0
-Z117 V4F2Th[YNSiYgZ`N>KfliG2
+Z129 IM>hSYKBdGCno6f`8S<^4l0
+Z130 V4F2Th[YNSiYgZ`N>KfliG2
 R4
-Z118 w1675365141
-Z119 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v
-Z120 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v
+Z131 w1675365141
+Z132 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v
+Z133 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v
 L0 6
 R8
 r1
 31
 R10
-Z121 npc@a@l@u
-Z122 !s100 IXUbhEUBfEk`28HN=:7Do2
-Z123 !s108 1675365145.826000
-Z124 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v|
-Z125 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v|
+Z134 npc@a@l@u
+Z135 !s100 IXUbhEUBfEk`28HN=:7Do2
+Z136 !s108 1675365145.826000
+Z137 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v|
+Z138 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc_alu.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vregfile
-Z126 !s100 M>LTj7ZGBB;6?F^J`>SDn1
-Z127 I>]DLT5_3Ko96_3f?kFD=n2
-Z128 V3De9hdg3i>LN2oo;MWMK;2
+Z139 I65jYEYIZhAjBhhi]eQE4T2
+Z140 V3De9hdg3i>LN2oo;MWMK;2
 R4
-Z129 w1675705568
-Z130 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v
-Z131 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v
+Z141 w1675913536
+Z142 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v
+Z143 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v
 L0 7
 R8
 r1
 31
-Z132 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v|
+Z144 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v|
 R10
-Z133 !s108 1675864049.553000
-Z134 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v|
+Z145 !s100 P14e7V6EQliBVeBP_V@8L2
+Z146 !s108 1675913549.729000
+Z147 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/regfile.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vRISC_RV32I_cpu
-Z135 IaVKn[dkJ0IIhR3DebI>ET1
-Z136 VPAW;O6J<KacN:EWKRCRA_2
+Z148 !s100 jjj`NjlcPgVjIDmD:LXk<1
+Z149 IK6lBbk1dHl:GE]7DkjYWT0
+Z150 VPAW;O6J<KacN:EWKRCRA_2
 R4
-Z137 w1675876399
-Z138 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v
-Z139 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v
+Z151 w1675910552
+Z152 8D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\RISC_RV32I_cpu.v
+Z153 FD:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\RISC_RV32I_cpu.v
 L0 14
 R8
 r1
 31
-Z140 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v|
+Z154 !s90 -reportprogress|300|-work|work|D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\RISC_RV32I_cpu.v|
 R10
-Z141 n@r@i@s@c_@r@v32@i_cpu
-Z142 !s100 oin=[zd8`Xn<eF0AKOM]`1
-Z143 !s108 1675876412.854000
-Z144 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v|
+Z155 n@r@i@s@c_@r@v32@i_cpu
 !i10b 1
 !s85 0
+Z156 !s108 1675959585.711000
+Z157 !s107 D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\RISC_RV32I_cpu.v|
 !s101 -O0
 vRISC_RV32I_cpu_tb
-Z145 !s100 jk3SnzJmHR4Z:]i4kO0VX1
-Z146 IMi^ITBT_MCzBlKHYX9e0z3
-Z147 V5Z;R;8zTf??>dMlN<]5[]1
-R4
-Z148 w1675869418
-Z149 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v
-Z150 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v
-L0 3
-R8
-r1
-31
-Z151 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v|
-R10
-Z152 n@r@i@s@c_@r@v32@i_cpu_tb
-Z153 !s108 1675876419.889000
-Z154 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v|
 !i10b 1
-!s85 0
-!s101 -O0
-vtest
-Z155 !s100 kb<6UfAKOnmEDZLe@IV5A0
-Z156 IDQcHd`XdI>?KG^H1TTQBD2
-Z157 VQFnV=?]J?266nTT[JG_o_3
+Z158 !s100 mMizQ=a7^_iLcbdRU;Sg_2
+Z159 IiYD1HOW5B4g1N=KaR7>[W2
+Z160 V5Z;R;8zTf??>dMlN<]5[]1
 R4
-Z158 w1675180086
-Z159 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v
-Z160 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v
+Z161 w1675912421
+Z162 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v
+Z163 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1675959592.021000
+!s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v|
+Z164 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v|
+!s101 -O0
+R10
+Z165 n@r@i@s@c_@r@v32@i_cpu_tb
+vtest
+Z166 !s100 kb<6UfAKOnmEDZLe@IV5A0
+Z167 IDQcHd`XdI>?KG^H1TTQBD2
+Z168 VQFnV=?]J?266nTT[JG_o_3
+R4
+Z169 w1675180086
+Z170 8D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v
+Z171 FD:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v
 L0 3
 R8
 r1
 31
-Z161 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v|
+Z172 !s90 -reportprogress|300|-work|work|D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v|
 R10
-Z162 !s108 1675864047.656000
-Z163 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v|
+Z173 !s108 1675864047.656000
+Z174 !s107 D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/test.v|
 !i10b 1
 !s85 0
 !s101 -O0

@@ -17,7 +17,7 @@ module ALU(data1, data2, ALUopr, SUBorSRA, ALUout, z);
   // contain signed representation of data buses 
   reg signed[bus_size-1:0] data_s1, data_s2; 
   
-  always @(data1, data2, ALUopr) begin 
+  always @(data1, data2, ALUopr, SUBorSRA) begin 
     case (ALUopr)
       // ******* arithmetic operations ******* 
       (3'b000): begin 

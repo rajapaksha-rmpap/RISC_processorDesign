@@ -111,13 +111,13 @@ module RISC_RV32I_cpu(instr, instrAddr, toMem, fromMem, MemAddr, WriteEn, ReadEn
   regfile RegF(fromReg1, fromReg2, toReg, rs2, rs1, rd, RegWrite, clk); 
   immGen IG(instr, imm); 
   
-  always @(rs1, PCout, ALUsrc1) begin 
+  always @(fromReg1, PCout, ALUsrc1) begin 
     // MUX1 (for ALUoperand1) 
     if (!ALUsrc1) data1 = fromReg1; 
     else data1 = PCout; 
   end 
   
-  always @(rs2, imm, ALUsrc2) begin 
+  always @(fromReg2, imm, ALUsrc2) begin 
     // MUX2 (for ALUoperand2)
     if (!ALUsrc2) data2 = fromReg2; 
     else data2 = imm; 

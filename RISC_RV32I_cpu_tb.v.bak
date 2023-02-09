@@ -1,11 +1,12 @@
 // testbench for RISC RV32I cpu 
 
 module RISC_RV32I_cpu_tb(); 
-  wire[31:0] instr, dataOut, dataIn, pc, MemAddr; 
+  wire[31:0] instr, dataOut, pc, MemAddr; 
   wire MemWrite, MemRead; 
   wire[1:0] addMemControl; 
   
   reg[31:0] instr_tb; 
+  reg[31:0] dataIn; 
   reg clk; 
   
   assign instr = instr_tb; 

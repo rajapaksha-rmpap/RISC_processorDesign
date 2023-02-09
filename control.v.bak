@@ -105,14 +105,18 @@ module control(opcode, controls);
           (2'b11): begin // ***** JAL ***** 
             controls[3] = 0; // ALUcontrol = default (ADD, SUBorSRA = 0) 
             controls[4] = 1; // ALUsrc1 = pc 
-            controls[5] = 0; // ALUsrc2 = immediate operand 
+            controls[5] = 1; // ALUsrc2 = immediate operand 
             controls[6] = 1; // result = (pc + 4) 
             controls[7] = 1; // do RegWrite 
             
             controls[8] = 1; // branching is UNconditional 
           end 
+          // ##### to avoid the warning 'incomplete case statement has no default case item'
+          default: controls = 10'b0; 
         endcase 
       end 
+      // ##### to avoid the warning 'inferring latch(es) for variable "controls"'
+      default: controls = 10'b0; 
     endcase 
   end 
 endmodule // control 

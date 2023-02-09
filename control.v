@@ -111,8 +111,12 @@ module control(opcode, controls);
             
             controls[8] = 1; // branching is UNconditional 
           end 
+          // ##### to avoid the warning 'incomplete case statement has no default case item'
+          // default: controls = 10'b0; 
         endcase 
       end 
+      // ##### to avoid the warning 'inferring latch(es) for variable "controls"'
+      // default: controls = 10'b0; 
     endcase 
   end 
 endmodule // control 

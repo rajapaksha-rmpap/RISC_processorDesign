@@ -1,16 +1,9 @@
-{D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/control.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/control.v}
+{D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/control.v} {1 {vlog -work work {D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\control.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module control
 
 Top level modules:
 	control
-
-} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v}
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RISC_RV32I_cpu_tb
-
-Top level modules:
-	RISC_RV32I_cpu_tb
 
 } {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -18,6 +11,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	ALU
+
+} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RISC_RV32I_cpu_tb
+
+Top level modules:
+	RISC_RV32I_cpu_tb
 
 } {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -61,6 +61,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	branch
 
+} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt_tb.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/loadDataExt_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module loadDataExt_tb
+
+Top level modules:
+	loadDataExt_tb
+
 } {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/pc.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module pc
@@ -75,19 +82,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	addALU
 
-} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v}
+} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/RISC_RV32I_cpu.v} {1 {vlog -work work {D:\ENTC - SEMESTER 5\EN3030 - Circuits and Systems Design\Digital Design - Dr. Ajith Pasqual\Project\ModelSim designs\RISC_RV32I_cpu.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module RISC_RV32I_cpu
 
 Top level modules:
 	RISC_RV32I_cpu
-
-} {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/immgen.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/immgen.v}
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module immGen
-
-Top level modules:
-	immGen
 
 } {} {}} {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu_tb.v} {1 {vlog -work work {D:/ENTC - SEMESTER 5/EN3030 - Circuits and Systems Design/Digital Design - Dr. Ajith Pasqual/Project/ModelSim designs/alu_tb.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012

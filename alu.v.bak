@@ -26,26 +26,26 @@ module ALU(data1, data2, ALUopr, SUBorSRA, ALUout, z);
         else 
           ALUout = data1 - data2; // signed subtraction 
         end 
-      (3'b001): ALUout = data1 & data2; // bit-wise AND 
-      (3'b010): ALUout = data1 | data2; // bit-wise OR 
-      (3'b011): ALUout = data1 ^ data2; // bit-wise XOR 
+      (3'b111): ALUout = data1 & data2; // bit-wise AND 
+      (3'b110): ALUout = data1 | data2; // bit-wise OR 
+      (3'b100): ALUout = data1 ^ data2; // bit-wise XOR 
       
       // ******* comparison operations ******* 
-      (3'b100): begin // set less than 
+      (3'b010): begin // set less than 
         data_s1 = data1; 
         data_s2 = data2; 
         if (data_s1 < data_s2) ALUout = 1; 
         else ALUout = 0;  
       end 
       
-      (3'b101): begin // set less than unsigned 
+      (3'b011): begin // set less than unsigned 
         if (data1 < data2) ALUout = 1; 
         else ALUout = 0; 
       end 
       
       // ******* bit shift operations ******* 
-      (3'b110): ALUout = data1 << data2[4:0]; // (logical) left shift 
-      (3'b111): begin 
+      (3'b001): ALUout = data1 << data2[4:0]; // (logical) left shift 
+      (3'b101): begin 
         if (SUBorSRA == 1'b0) 
           ALUout = data1 >> data2[4:0];      // logical right shift 
         else begin 
